@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #0b0d12;
+  --foreground: #f3f4f6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.theme-light {
+  color-scheme: light;
+  background: #f7f8fa;
+  color: #17191f;
+}
+
+.theme-light header {
+  border-color: #e5e7eb;
+  background-color: rgb(255 255 255 / 92%);
+}
+
+.theme-light aside {
+  border-color: #e5e7eb;
+  background-color: #fff;
+}
+
+.theme-light [class~="bg-[#0b0d12]"] {
+  background-color: #f7f8fa;
+}
+
+.theme-light [class~="bg-[#0b0d12]/90"] {
+  background-color: rgb(255 255 255 / 92%);
+}
+
+.theme-light [class~="bg-[#10131a]"] {
+  background-color: #fff;
+}
+
+.theme-light [class~="bg-[#131720]"] {
+  background-color: #f1f3f6;
+}
+
+.theme-light [class~="text-[#f3f4f6]"],
+.theme-light [class~="text-white"] {
+  color: #17191f;
+}
+
+.theme-light [class~="text-slate-300"] {
+  color: #4b5563;
+}
+
+.theme-light [class~="text-slate-400"] {
+  color: #4b5563;
+}
+
+.theme-light [class~="text-slate-500"] {
+  color: #606b7b;
+}
+
+.theme-light [class~="text-slate-600"] {
+  color: #687386;
+}
+
+.theme-light [class~="text-slate-700"] {
+  color: #818b9a;
+}
+
+.theme-light [class~="border-white/[0.07]"],
+.theme-light [class~="border-white/[0.08]"],
+.theme-light [class~="border-white/10"] {
+  border-color: #e1e5eb;
+}
+
+.theme-light [class~="bg-white/[0.07]"],
+.theme-light [class~="bg-white/[0.04]"],
+.theme-light [class~="bg-white/[0.025]"],
+.theme-light [class~="bg-white/10"] {
+  background-color: #eef0f4;
+}
+
+.theme-light [class~="hover:bg-white/[0.04]"]:hover,
+.theme-light [class~="hover:bg-white/[0.06]"]:hover {
+  background-color: #e9edf2;
+}
+
+.theme-light [class~="hover:text-white"]:hover {
+  color: #17191f;
+}
+
+.theme-light input {
+  color: #17191f;
+}
+
+.theme-light input::placeholder {
+  color: #687386;
+}
